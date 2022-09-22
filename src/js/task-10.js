@@ -15,7 +15,11 @@ let boxDimensions = 30;
 
 function createBoxes(amount) {
 	amount = input.value;
-	for (let i = 0; i < input.value; i += 1, boxDimensions += 10) {
+	for (
+		let i = 0, boxDimensions = 30;
+		i < input.value;
+		i += 1, boxDimensions += 10
+	) {
 		const box = document.createElement("div");
 		box.classList.add("box");
 		box.style.width = boxDimensions + "px";
