@@ -7,13 +7,13 @@ const spanNameRef = document.querySelector("span#name-output");
 console.log(spanNameRef);
 
 inputRef.addEventListener("input", () => {
-	spanNameRef.textContent = inputRef.value;
+	spanNameRef.textContent = "" ? "Anon" : inputRef.value;
 });
 
-inputRef.addEventListener("change", () => {
-	if (inputRef.value === "") {
-		spanNameRef.textContent = "Anonymous";
-	}
-});
+// Зробив як було сказано, change у мене відігравав роль автозаповнення span при видаленні текстового контенту з input
 
-// Напиши скрипт который, при наборе текста в инпуте input#name-input (событие input), подставляет его текущее значение в span#name-output. Если инпут пустой, в спане должна отображаться строка "Anonymous".
+// inputRef.addEventListener("change", () => {
+// 	if (inputRef.value === "") {
+// 		spanNameRef.textContent = "Anonymous";
+// 	}
+// });

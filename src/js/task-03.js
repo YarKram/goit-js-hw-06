@@ -40,32 +40,3 @@ trueImages.forEach((trueImg) => {
 	trueImg.style.height = "100%";
 	trueImg.style.borderRadius = "10%";
 });
-
-/* task 3 */
-
-// .gallery {
-// 	display: flex;
-// 	gap: 10px;
-// 	list-style: none;
-// }
-
-// .gallery__item {
-// 	border: 1px dashed tomato;
-// 	border-radius: 10%;
-// }
-
-// .gallery__image {
-// 	width: 200px;
-// 	height: 100%;
-// 	border-radius: 10%;
-// }
-
-// Задание 3
-// Напиши скрипт для создания галереи изображений по массиву данных. В HTML есть список ul.gallery.
-
-// <ul class="gallery"></ul>
-
-// Используй массив объектов images для создания элементов <img> вложенных в <li>. Для создания разметки используй шаблонные строки и метод insertAdjacentHTML().
-
-// Все элементы галереи должны добавляться в DOM за одну операцию вставки.
-// Добавь минимальное оформление галереи флексбоксами или гридами через CSS классы.
